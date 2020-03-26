@@ -1,0 +1,11 @@
+.weather-select{
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	&:before{
+		content: '';
+		background-color: green;
+		width: 20px;
+		height: 20px;
+	}
+}

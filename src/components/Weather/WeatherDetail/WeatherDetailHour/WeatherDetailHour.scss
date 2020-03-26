@@ -1,0 +1,35 @@
+.weather-detail__hour{
+	display: flex;
+	&:last-child{
+		.weather-detail__left, .weather-detail__right{
+			border-bottom-color: #1775d1;
+		}
+	}
+	&:nth-child(1n) {
+		animation: .5s animated-detail-hour ease-in-out;
+	}
+	&:nth-child(2n) {
+		animation: .5s animated-detail-hour-2 ease-in-out;
+	}
+}
+
+@keyframes animated-detail-hour {
+	from{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes animated-detail-hour-2 {
+	from{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
